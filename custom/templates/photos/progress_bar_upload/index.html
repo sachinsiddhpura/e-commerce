@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Progress Bar Upload{% endblock %}
+<div class="container">
+<form method="POST">{% csrf_token %}
+  {{photos}}
+</form>
+</div>
